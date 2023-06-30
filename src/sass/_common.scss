@@ -1,1 +1,70 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+
+  background-color: rgb(210, 210, 210);
+  background: radial-gradient(
+    circle,
+    rgba(210, 210, 210, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 40px;
+  max-width: 375px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
