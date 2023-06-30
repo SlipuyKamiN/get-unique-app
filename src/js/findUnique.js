@@ -19,7 +19,7 @@ const findUniqueInArray = array => {
 };
 
 const getUniqueLetter = text => {
-  words = text.split(' ');
+  const words = text.split(' ');
 
   const uniqueLettersInWord = words.map(word => {
     word = word.split('');
